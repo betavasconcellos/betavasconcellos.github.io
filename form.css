@@ -1,0 +1,174 @@
+body{
+    background:#ffffff;
+    height:100vh;
+    
+}
+
+.menu{
+    background: url("img/patas.svg") no-repeat, url("img/forma1.svg") no-repeat;
+    background-size:300px,contain;
+    background-position: top right, top left;
+}
+
+main{
+    top:-80px;
+    min-height: 70vh;
+    justify-content: start;
+}
+
+.corpo{
+    width:70%;
+}
+
+.logo{
+    margin-top:100px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;    
+    text-align: center;
+    color:#3772FF;
+    
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 70%;
+    
+}
+
+.formLabel{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #737380;
+    margin:15px 0 5px;
+}
+
+.formNome, .formEmail,.formSenha,.formConfirmaSenha{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 6px;
+    padding:10px;
+    text-align: center;
+    width: 100%;
+}
+
+.formBotao{
+    text-align: center;
+    background: #FC7071;
+    border-radius: 6px;
+    border: none;
+    color:white;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding:10px;
+    width:150px;
+}
+
+.esqueciSenha{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px; 
+    color: #FC7071;
+    margin-top:5px;
+    text-decoration: underline;
+}
+
+.formSenha, .formConfirmaSenha{
+    width: 60%;
+}
+
+footer{
+    background: #36D6AD;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-80px;
+}
+.rodape p{ 
+    color: white
+}
+
+@media screen and (max-width: 768px){
+    
+    .corpo{
+        width:70%;
+    }
+    
+    .formBotao{
+        
+        margin-bottom: 20px;
+    }
+    .formSenha, .formConfirmaSenha {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .menu{
+        background: url("img/patas.svg") no-repeat, url("img/forma1.svg") no-repeat;
+        background-size:250px,contain;
+        background-position: top right, top left;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    
+    .menu{
+        background:  url("img/patas.svg") no-repeat, url("img/forma1.svg") no-repeat;
+        background-size:180px,contain;
+        background-position: top right, top left;
+        width:100%;
+        height:295px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px; 
+    }
+    .formLabel{
+        
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .formNome, .formEmail,.formSenha,.formConfirmaSenha{
+        
+        font-size: 12px;
+        line-height: 16px;
+        
+    }
+    
+    .formNome, .formEmail,.formSenha,.formConfirmaSenha{
+        width: 100%;
+    }
+    
+    
+    
+    
+}

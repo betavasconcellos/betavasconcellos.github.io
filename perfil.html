@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AdoPet</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="mensagem.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="menu-lista">       
+                <li class="item-logo"> </li>
+                <li class="item-menu" ><img src="img/casa.png"></li>
+                <li class="item-menu" ><img src="img/mensagens.png"></li>
+            </ul>
+        </nav>
+        <p>Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+    </header>
+    <main>
+        <section class="corpo">
+            
+            <form class="formulario" action="#">
+                <h2 class="perfil">Perfil</h2> 
+                <label class="formLabel" for="foto">Foto</label>
+                <a href="#"><img src="img/usuario.png"></a>
+                <p class="editaFoto">Clique na foto para editar</p>
+                
+                <label class="formLabel" for="nome">Nome</label>
+                <input type="text" id="nome" class="formNome" required placeholder="Insira seu nome completo">
+                
+                <label class="formLabel" for="telefone">Telefone</label>
+                <input type="phone" id="telefone" class="formTelefone" required placeholder="55 11 XXXXX-XXXX">
+                
+                <label class="formLabel" for="cidade">Cidade</label>
+                <input type="text" id="cidade" class="formCidade" required placeholder="São Paulo">
+                
+                <label class="formLabel" for="sobre">Sobre</label>
+                <textarea cols="40" rows="10" id="sobre" class="formSobre" required placeholder="Sobre você ou sua ONG">
+                </textarea>
+                <input class="formBotao" type="submit" value="Salvar">
+            </div>
+            
+        </form>
+    </section>
+</main>
+<footer>
+    <section class="rodape">
+        <p>4º FrontEnd Challenge Alura 2022</p>
+        <p>Por Roberta Nascimento.</p>
+    </section>
+</footer>
+</body>
+</html>

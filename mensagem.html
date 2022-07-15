@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AdoPet</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="mensagem.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="menu-lista">       
+                <li class="item-logo"> </li>
+                <li class="item-menu" ><img src="img/casa.png"></li>
+                <li class="item-menu" ><img src="img/mensagens.png"></li>
+            </ul>
+        </nav>
+        <p>Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</p>
+    </header>
+    <main>
+        <section class="corpo">
+            
+            <form class="formulario" action="#">
+                <label class="formLabel" for="nome">Nome</label>
+                <input type="text" id="nome" class="formNome" required placeholder="Insira seu nome completo">
+                
+                <label class="formLabel" for="telefone">Telefone</label>
+                <input type="phone" id="telefone" class="formTelefone" required placeholder="Insira seu telefone ou whatsapp">
+                
+                <label class="formLabel" for="nomePet">Nome do animal</label>
+                <input type="text" id="nomePet" class="formNomePet" required placeholder="Por qual animal se interessou?">
+                
+                <label class="formLabel" for="mensagem">Mensagem</label>
+                <textarea cols="40" rows="10" id="mensagem" class="formMensagem" required placeholder="Escreva sua mensagem">
+                </textarea>
+                <input class="formBotao" type="submit" value="Enviar">
+            </div>
+            
+        </form>
+    </section>
+</main>
+<footer>
+    <section class="rodape">
+        <p>4º FrontEnd Challenge Alura 2022</p>
+        <p>Por Roberta Nascimento.</p>
+    </section>
+</footer>
+</body>
+</html>

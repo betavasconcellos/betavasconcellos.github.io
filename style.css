@@ -1,0 +1,290 @@
+body{
+    background:#3772FF;
+    height:100vh;
+    
+}
+.cabecalho{
+    width:100%;
+    
+}
+
+.menu{
+    background-image: url("img/forma1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 40px;
+    padding-left:40px;
+    height:360px;
+}
+.menu-lista{
+    width:250px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.item-logo{
+    width: 130px;
+    height:30px;
+    background:url("img/logo-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logo{
+    margin-top: 100px;
+    margin-left: -40px;
+    text-align: center;
+    
+}
+.logo img{
+    width:252px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/forma2.svg");
+    background-repeat: no-repeat;
+    background-position: right top; 
+    background-size:120px;
+    position: relative;
+    top:-120px;
+    bottom:-120px;
+}
+
+
+.corpo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;    
+    text-align: center;
+    color:#ffffff;
+}
+.descricao{
+    padding-bottom: 30px;
+    visibility: visible;
+}
+.boas-vindas{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+    color:#ffffff;
+    text-align:center;
+} 
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+.formBotao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    
+}
+
+.login, .cadastro {
+    background: #FC7071;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    margin-top:5px;
+    padding:10px;
+    width:90%;
+}
+
+.ilustracao{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    position:relative;
+}
+
+.ilustracao1{
+    margin-top: 50px;
+    width:350px;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
+    background: #36D6AD;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    top:-150px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*tela de tablet*/
+
+@media screen and (max-width: 768px){
+    
+    
+    .menu-lista{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    
+    .item-menu{
+        height:30px;
+    }
+    
+    .logo{
+        margin-top: 200px;
+    }
+    
+    
+    main{
+        background-size:100px;
+        top:-30px;
+    }
+    .corpo{
+        width:45%;
+    }
+    .boas-vindas{
+        
+        font-size: 28px;
+        padding: 30px 0;
+    }
+    p{
+        font-size: 18px;
+        line-height: 26px;
+        
+    }
+    
+    .descricao{
+        visibility: hidden;
+        position: relative;
+        
+    }
+    .descricao:after{
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!";
+    }
+    
+    
+    
+    .login, .cadastro {
+        height:48px;
+    }
+    
+    footer{
+        top:-90px;
+        
+    }
+    
+}
+
+/* tela de celular */
+
+@media screen and (max-width: 480px){
+    
+    .menu{
+        margin:0px;
+        padding-left:0;
+        height:295px;
+    }
+    
+    .menu-lista{
+        margin:0;
+        width:150px;
+    }
+    .item-logo{
+        visibility: hidden;
+        position: relative;
+        width:0;
+        
+    }
+    .logo{
+        margin-top: 120px;
+        margin-left: 0;
+    }
+    .logo img{
+        width:187px;
+    }
+    
+    main{
+        background-size:initial;
+        top:-50px;
+    }
+    
+    .corpo{
+        width:75%;
+        
+    }
+    
+    .descricao{
+        visibility: hidden;
+        position: relative;
+        
+    }
+    .descricao:after{
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!";
+    }     
+    
+    
+    .ilustracao1{
+        width: 200px;
+    }
+    .ilustracao{
+        top:20px;
+    }
+    
+    .formBotao{
+        width:80%;
+    }
+    
+    .login, .cadastro {
+        font-size: 16px;
+        margin-top:10px;
+        
+    }
+    
+    footer{
+        top:-50px;
+        
+    }
+    
+    
+}

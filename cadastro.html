@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AdoPet</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="item-logo"> </li>
+                <li class="item-menu" ><img src="img/casa.png"></li>
+                <li class="item-menu" ><img src="img/mensagens.png"></li>
+            </ul>
+            <h1 class="logo"><img src="img/logo.svg"></h1>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="corpo">
+            <p>Ainda não tem cadastro?</p>
+            <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            
+            <form class="formulario" action="#">
+                <label class="formLabel" for="email">E-mail</label>
+                <input type="email" id="email" class="formEmail" required placeholder="Escolha seu melhor e-mail">
+                
+                <label class="formLabel" for="nome">Nome</label>
+                <input type="text" id="nome" class="formNome" required placeholder="Digite seu nome completo">
+                
+                <label class="formLabel" for="senha">Senha</label>
+                <input type="password" id="senha" class="formSenha" required placeholder="Crie uma senha">
+                
+                <label class="formLabel" for="confirmaSenha">Confirme sua senha</label>
+                <input type="password" id="confirmaSenha" class="formConfirmaSenha" required placeholder="Repita a senha criada acima">
+                
+                <input class="formBotao" type="submit" value="Cadastrar">
+            </div>
+            
+        </form>
+    </section>
+</main>
+<footer>
+    <section class="rodape">
+        <p>4º FrontEnd Challenge Alura 2022</p>
+        <p>Por Roberta Nascimento.</p>
+    </section>
+</footer>
+</body>
+</html>
