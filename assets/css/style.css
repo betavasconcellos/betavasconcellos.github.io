@@ -1,0 +1,23 @@
+@media screen and (min-width:0){
+    
+p,span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.texto-alternativo-index::before{
+    content:"Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!";
+}
+
+}
+@media screen and (min-width:768px){
+    
+.texto-alternativo-index::before{
+    content:"Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!";
+}
+}
+
+

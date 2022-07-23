@@ -1,60 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>AdoPet</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="mensagem.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/corpo.css">
+    <link rel="stylesheet" href="./assets/css/logo.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+    
+    <link rel="stylesheet" href="./assets/css/menu/menu.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-logo.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-lista.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-item.css">
+    <link rel="stylesheet" href="./assets/css/container/container.css">
+    <link rel="stylesheet" href="./assets/css/container/container-texto.css">
+    <link rel="stylesheet" href="./assets/css/container/container-titulo.css">
+    <link rel="stylesheet" href="./assets/css/container/container-conteudo.css">
+    <link rel="stylesheet" href="./assets/css/botao.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/creditos.css">
+    
+    <link rel="stylesheet" href="./assets/css/formulario/formulario.css">
+    <link rel="stylesheet" href="./assets/css/formulario/formulario-label.css">
+    <link rel="stylesheet" href="./assets/css/formulario/formulario-campo.css">
+    <link rel="stylesheet" href="./assets/css/formulario/formulario-editaFoto.css">
+    <link rel="stylesheet" href="./assets/css/formulario/formulario-titulo.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/icon.svg"/>
+    
 </head>
-<body>
+<body class="corpo--home">
     <header class="cabecalho">
+        
         <nav class="menu">
-            <ul class="menu-lista">       
-                <li class="item-logo"> </li>
-                <li class="item-menu" ><img src="img/casa.png"></li>
-                <li class="item-menu" ><img src="img/mensagens.png"></li>
+            <ul class="menu__lista">
+                <li class="menu__item" ><img class="menu__logo" src="./assets/img/logo-white.svg" alt="Logo da Adopet"></li>
+                <li class="menu__item" ><a href="./home.html" title="Início"><img src="./assets/img/home.png" alt="Início"></a></li>
+                <li class="menu__item" ><a href="./mensagem.html" title="Mensagem"><img src="./assets/img/mensagens.png" alt="Mensagem"></a></li>
+                <li class="menu__item menu__item--usuario"><a href="./perfil.html" title="perfil"><img src="./assets/img/usuario.png" alt="Meu Perfil"></a></li>
             </ul>
         </nav>
-        <p>Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+        
     </header>
-    <main>
-        <section class="corpo">
+    <main class="container--topo">
+        <div class="container__texto">
+            <p class="container__conteudo">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+        </div>
+        <form class="formulario--mensagem" action="#">
+            <h2 class="formulario__titulo">Perfil</h2> 
+            <label class="formulario__label--mensagem" for="foto">Foto</label>
+            <a title="Usuário" href="#"><img src="./assets/img/usuario.png" alt="Sua foto de perfil"></a>
+            <p class="formulario__edita-foto">Clique na foto para editar</p>
             
-            <form class="formulario" action="#">
-                <h2 class="perfil">Perfil</h2> 
-                <label class="formLabel" for="foto">Foto</label>
-                <a href="#"><img src="img/usuario.png"></a>
-                <p class="editaFoto">Clique na foto para editar</p>
-                
-                <label class="formLabel" for="nome">Nome</label>
-                <input type="text" id="nome" class="formNome" required placeholder="Insira seu nome completo">
-                
-                <label class="formLabel" for="telefone">Telefone</label>
-                <input type="phone" id="telefone" class="formTelefone" required placeholder="55 11 XXXXX-XXXX">
-                
-                <label class="formLabel" for="cidade">Cidade</label>
-                <input type="text" id="cidade" class="formCidade" required placeholder="São Paulo">
-                
-                <label class="formLabel" for="sobre">Sobre</label>
-                <textarea cols="40" rows="10" id="sobre" class="formSobre" required placeholder="Sobre você ou sua ONG">
-                </textarea>
-                <input class="formBotao" type="submit" value="Salvar">
-            </div>
+            <label class="formulario__label--mensagem" for="nome">Nome</label>
+            <input type="text" id="nome" class="formulario__campo--mensagem" required placeholder="Insira seu nome completo">
             
-        </form>
-    </section>
+            <label class="formulario__label--mensagem" for="telefone">Telefone</label>
+            <input type="phone" id="telefone" class="formulario__campo--mensagem" required placeholder="55 11 XXXXX-XXXX">
+            
+            <label class="formulario__label--mensagem" for="cidade">Cidade</label>
+            <input type="text" id="cidade" class="formulario__campo--mensagem" required placeholder="São Paulo">
+            
+            <label class="formulario__label--mensagem" for="sobre">Sobre</label>
+            <textarea cols="40" rows="10" id="sobre" class="formulario__campo--mensagem formulario__campo--textarea" required placeholder="Sobre você ou sua ONG"></textarea>
+            <input class="botao" type="submit" value="Salvar">
+        </div>
+        
+    </form>
+</section>
 </main>
-<footer>
-    <section class="rodape">
+<footer class="rodape">        
+    <div class="creditos">
         <p>4º FrontEnd Challenge Alura 2022</p>
         <p>Por Roberta Nascimento.</p>
-    </section>
+    </div>
 </footer>
 </body>
 </html>

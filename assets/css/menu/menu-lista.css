@@ -1,0 +1,9 @@
+.menu__lista{
+    align-items: center;
+    display:flex;
+    justify-content: left;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    
+}
+

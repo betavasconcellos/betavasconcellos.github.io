@@ -1,0 +1,15 @@
+@media screen and (min-width:0){
+    .cabecalho__logo{
+        left:50%;
+        position: absolute;
+        top: 200px;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (min-width:768px){
+    .cabecalho__logo{
+        top: 300px;
+        
+    }
+    
+}

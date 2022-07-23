@@ -1,58 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>AdoPet</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/corpo.css">
+    <link rel="stylesheet" href="./assets/css/logo.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho-logo.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-logo.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-lista.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-item.css">
+    <link rel="stylesheet" href="./assets/css/container/container.css">
+    <link rel="stylesheet" href="./assets/css/container/container-texto.css">
+    <link rel="stylesheet" href="./assets/css/container/container-titulo.css">
+    <link rel="stylesheet" href="./assets/css/container/container-conteudo.css">
+    <link rel="stylesheet" href="./assets/css/botao.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/creditos.css">
+    <link rel="stylesheet" href="./assets/css/some.css">
+    
+    <link rel="stylesheet" href="./assets/css/formulario/formulario.css">
+    <link rel="stylesheet" href="./assets/css/formulario/formulario-label.css">
+    <link rel="stylesheet" href="./assets/css/formulario/formulario-campo.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/icon.svg"/>
+    
 </head>
-<body>
-    <header class="cabecalho">
+<body class="corpo">
+    <header class="cabecalho--patas">
+        
         <nav class="menu">
-            <ul class="menu-lista">
-                <li class="item-logo"> </li>
-                <li class="item-menu" ><img src="img/casa.png"></li>
-                <li class="item-menu" ><img src="img/mensagens.png"></li>
+            <ul class="menu__lista">
+                <li class="menu__item" ><img class="menu__logo" src="./assets/img/logo-white.svg" alt="Logo da Adopet"></li>
+                <li class="menu__item" ><a href="./home.html" title="Início"><img src="./assets/img/home.png" alt="Início"></a></li>
+                <li class="menu__item" ><a href="./mensagem.html" title="Mensagem"><img src="./assets/img/mensagens.png" alt="Mensagem"></a></li>
+                <li class="menu__item menu__item--usuario some"><a href="./perfil.html" title="perfil"><img src="./assets/img/usuario.png" alt="Meu Perfil"></a></li>
             </ul>
-            <h1 class="logo"><img src="img/logo.svg"></h1>
         </nav>
+        <h1 class="cabecalho__logo"><img src="./assets/img/logo.svg" alt="Logo Adopet"></h1>
         
     </header>
-    <main>
-        <section class="corpo">
-            <p>Ainda não tem cadastro?</p>
-            <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+    <main class="container">
+
+        <div class="container__texto">
+            <p class="container__conteudo">Ainda não tem cadastro?</p>
+            <p class="container__conteudo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p> 
+        </div>
+
+        <form class="formulario formulario--cadastro" action="#">
+            <label class="formulario__label" for="email">E-mail</label>
+            <input type="email" id="email" class="formulario__campo" required placeholder="Escolha seu melhor e-mail">
             
-            <form class="formulario" action="#">
-                <label class="formLabel" for="email">E-mail</label>
-                <input type="email" id="email" class="formEmail" required placeholder="Escolha seu melhor e-mail">
-                
-                <label class="formLabel" for="nome">Nome</label>
-                <input type="text" id="nome" class="formNome" required placeholder="Digite seu nome completo">
-                
-                <label class="formLabel" for="senha">Senha</label>
-                <input type="password" id="senha" class="formSenha" required placeholder="Crie uma senha">
-                
-                <label class="formLabel" for="confirmaSenha">Confirme sua senha</label>
-                <input type="password" id="confirmaSenha" class="formConfirmaSenha" required placeholder="Repita a senha criada acima">
-                
-                <input class="formBotao" type="submit" value="Cadastrar">
-            </div>
+            <label class="formulario__label" for="nome">Nome</label>
+            <input type="text" id="nome" class="formulario__campo" required placeholder="Digite seu nome completo">
             
-        </form>
-    </section>
+            <label class="formulario__label" for="senha">Senha</label>
+            <input type="password" id="senha" class="formulario__campo formulario__campo--senha" required placeholder="Crie uma senha">
+            
+            <label class="formulario__label" for="confirmaSenha">Confirme sua senha</label>
+            <input type="password" id="confirmaSenha" class="formulario__campo formulario__campo--senha" required placeholder="Repita a senha criada acima">
+            
+            <input class="botao" type="submit" value="Cadastrar">
+        </div>
+        
+    </form>
 </main>
-<footer>
-    <section class="rodape">
+<footer class="rodape">        
+    <div class="creditos">
         <p>4º FrontEnd Challenge Alura 2022</p>
         <p>Por Roberta Nascimento.</p>
-    </section>
+    </div>
 </footer>
 </body>
 </html>

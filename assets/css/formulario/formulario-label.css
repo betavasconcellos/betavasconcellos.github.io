@@ -1,0 +1,22 @@
+.formulario__label{
+    color:#737380;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+}
+
+.formulario__label--mensagem{
+    color:#3772FF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    width:90%
+
+}

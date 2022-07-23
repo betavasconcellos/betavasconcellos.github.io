@@ -1,0 +1,10 @@
+.botoes{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 1.5rem;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}

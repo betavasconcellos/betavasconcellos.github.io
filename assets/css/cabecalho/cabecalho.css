@@ -1,0 +1,27 @@
+@media screen and (min-width:0){
+
+    .cabecalho{
+        background-image: url("/assets/img/forma1.svg");
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 295px;
+    
+    }
+
+    .cabecalho--patas{
+        background: url("/assets/img/patas.svg") no-repeat top right, url("/assets/img/forma1.svg") no-repeat top left;
+        background-size: contain;
+        height: 295px;
+    
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    .cabecalho,.cabecalho--patas{
+        height: 469px;
+    
+    }
+
+}

@@ -1,0 +1,11 @@
+.pet-responsavel__link{
+    
+    align-items: center;
+    color:#737380;
+    display:flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    text-decoration: none;
+
+    
+}

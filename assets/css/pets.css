@@ -1,0 +1,23 @@
+@media screen and (min-width:0){
+    .pets{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    
+}
+
+@media screen and (min-width:768px){
+    .pets{
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width:1440px){
+    
+}

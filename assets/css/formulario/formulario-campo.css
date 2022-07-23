@@ -1,0 +1,40 @@
+@media screen and (min-width:0){
+
+.formulario__campo{
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border:0;
+    border-radius: 6px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 1rem;
+    width:80%;
+}
+
+.formulario__campo--senha{
+    background: url("../../img/eye.png");
+    background-color: #F7F7F7;
+    background-position: 98%;
+    background-repeat: no-repeat;
+}
+
+.formulario__campo--mensagem{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 6px;
+    height: 40px;
+    padding-left:1rem;
+    margin-bottom: 1rem;
+    width:90%;
+}
+.formulario__campo--textarea{
+ height: 150px;   
+}
+}
+@media screen and (min-width:1440px){
+    .formulario__campo--senha{
+        width:50%;
+    }
+}

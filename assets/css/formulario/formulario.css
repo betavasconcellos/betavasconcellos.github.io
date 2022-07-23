@@ -1,0 +1,33 @@
+@media screen and (min-width:0){
+    .formulario{
+        align-items: center;
+        padding: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .formulario--mensagem{
+        align-items: center;
+        background-color:#F6F6F6;
+        padding: 2rem;
+        margin: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .formulario, .formulario--mensagem{
+        width:620px;
+
+    }
+
+.formulario--cadastro :nth-child(3){
+    order:-1;
+}
+.formulario--cadastro :nth-child(4){
+    order:-1;
+}
+}

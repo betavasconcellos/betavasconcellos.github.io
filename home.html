@@ -1,60 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>AdoPet</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/corpo.css">
+    <link rel="stylesheet" href="./assets/css/logo.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+
+    <link rel="stylesheet" href="./assets/css/menu/menu.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-logo.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-lista.css">
+    <link rel="stylesheet" href="./assets/css/menu/menu-item.css">
+    <link rel="stylesheet" href="./assets/css/container/container.css">
+    <link rel="stylesheet" href="./assets/css/container/container-texto.css">
+    <link rel="stylesheet" href="./assets/css/container/container-titulo.css">
+    <link rel="stylesheet" href="./assets/css/container/container-conteudo.css">
+    <link rel="stylesheet" href="./assets/css/botao.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/creditos.css">
+
+    <link rel="stylesheet" href="./assets/css/pets.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-cidade.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-comportamento.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-idade.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-imagem.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-informacoes.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-nome.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-porte.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-imagemContato.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-responsavel.css">
+    <link rel="stylesheet" href="./assets/css/pet/pet-responsavel-link.css">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/icon.svg"/>
+    
 </head>
-<body>
+<body class="corpo--home">
     <header class="cabecalho">
+
         <nav class="menu">
-            <ul class="menu-lista"> 
-                <li class="item-logo"> </li>      
-                <li class="item-menu" ><img src="img/casa.png"></li>
-                <li class="item-menu" ><img src="img/mensagens.png"></li>
+            <ul class="menu__lista">
+                <li class="menu__item" ><img class="menu__logo" src="./assets/img/logo-white.svg" alt="Logo da Adopet"></li>
+                <li class="menu__item" ><a href="./home.html" title="Início"><img src="./assets/img/home.png" alt="Início"></a></li>
+                <li class="menu__item" ><a href="./mensagem.html" title="Mensagem"><img src="./assets/img/mensagens.png" alt="Mensagem"></a></li>
+                <li class="menu__item menu__item--usuario"><a href="./perfil.html" title="perfil"><img src="./assets/img/usuario.png" alt="Meu Perfil"></a></li>
             </ul>
         </nav>
-        <p>Olá! Veja os amigos disponíveis para adoção!</p>
+
+        
     </header>
-    <main>
-        <section class="corpo">
-            <section class="exibePet">
+    <main class="container--topo">
+            <div class="container__texto">
+                <p class="container__conteudo">Olá! Veja os amigos disponíveis para adoção!</p>
+            </div>
+            
+            <section class="pets">
                 <div class="pet">
-                    <img class="imagemPet" src="img/pet-dunga.png" alt="Cão chamado Dunga">
-                    <div class="infoPet">
-                        <h2 class="nomePet">Dunga</h2>
-                        <p class="idadePet">2 anos</p>
-                        <p class="portePet">Porte pequeno</p>
-                        <p class="comportamentoPet"> Calmo e educado</p>
-                        <p class="cidadePet">Rio de Janeiro (RJ)</p>
-                        <p class="responsavelPet"><a href="#"><img class="imagemContato"src="img/icone-mensagem.png" alt="icone de mensagem"> Falar com responsável</a></p>
+                    <img class="pet__imagem" src="./assets/img/pet-dunga.png" alt="Cão chamado Dunga">
+                    <div class="pet__informacoes">
+                        <h2 class="pet__nome">Dunga</h2>
+                        <span class="pet__idade">2 anos</span>
+                        <span class="pet__porte">Porte pequeno</span>
+                        <span class="pet__comportamento"> Calmo e educado</span>
+                        <span class="pet__cidade">Rio de Janeiro (RJ)</span>
+                        <span class="pet__responsavel"><a class="pet-responsavel__link" href="#"><img class="pet__imagem-contato" src="./assets/img/icone-mensagem.png" alt="icone de mensagem"> Falar com responsável</a></span>
                     </div>
                 </div>
                 <div class="pet">
-                    <img class="imagemPet" src="img/pet-felicia.png" alt="Gato chamado Felícia">
-                    <div class="infoPet">
-                        <h2 class="nomePet">Felícia</h2>
-                        <p class="idadePet">3 meses</p>
-                        <p class="portePet">Porte pequeno</p>
-                        <p class="comportamentoPet"> Ativa e carinhosa</p>
-                        <p class="cidadePet">Nova Iguaçu (RJ)</p>
-                        <p class="responsavelPet"><a href="#"><img class="imagemContato"src="img/icone-mensagem.png" alt="icone de mensagem"> Falar com responsável</a></p>
+                    <img class="pet__imagem" src="./assets/img/pet-felicia.png" alt="Gato chamado Felícia">
+                    <div class="pet__informacoes">
+                        <h2 class="pet__nome">Felícia</h2>
+                        <span class="pet__idade">3 meses</span>
+                        <span class="pet__porte">Porte pequeno</span>
+                        <span class="pet__comportamento"> Ativa e carinhosa</span>
+                        <span class="pet__cidade">Nova Iguaçu (RJ)</span>
+                        <span class="pet__responsavel"><a class="pet-responsavel__link" href="#"><img class="pet__imagem-contato"src="./assets/img/icone-mensagem.png" alt="icone de mensagem">Falar com responsável</a></span>
                     </div>
                 </div>
             </section>
-        </section>
     </main>
-    <footer>
-        <section class="rodape">
+    <footer class="rodape">        
+        <div class="ilustracao">
+        </div>
+        <div class="creditos">
             <p>4º FrontEnd Challenge Alura 2022</p>
             <p>Por Roberta Nascimento.</p>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
